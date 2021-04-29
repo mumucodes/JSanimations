@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Buttons</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="buttons">
+        <button>button1</button>
+        <button>button2</button>
+        <button>button3</button>
+    </div>
+
+    <svg>
+        <defs>
+            <filter id="wave">
+                <feTurbulence type='fractalNoise' baseFrequency='0.09 0.0001' numOctaves='1' result='warp' />
+                <feDisplacementMap xchannelSelector='R' yChannelSelector='G' scale='30' in='SourceGraphic' in2='warpOffset' />
+            </filter>
+        </defs>
+    </svg>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
