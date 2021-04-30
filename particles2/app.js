@@ -28,6 +28,7 @@ canvas.addEventListener('mousemove', function(e){
     mouse.y = e.y;
     for (let i = 0; i < 10; i++);
     particleArray.push(new Particle());
+
 });
 
 class Particle {
